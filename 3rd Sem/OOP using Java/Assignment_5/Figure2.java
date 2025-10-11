@@ -37,7 +37,7 @@ class Triangle extends Figure {
     }
 }
 
-// Driver class (public, matches filename)
+// Driver class
 public class Figure2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
