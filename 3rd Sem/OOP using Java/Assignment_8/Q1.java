@@ -6,6 +6,7 @@ class ThreadData extends Thread {
         System.out.println("Thread Group: " + getThreadGroup().getName());
     }
 }
+
 class ThreadDetails {
     public static void main(String args[]) {
         ThreadData t = new ThreadData();
