@@ -1,3 +1,9 @@
+/*
+    2. Write a java awt program, which will create 3 text field and one button labelled as Subtract. The program will take
+the input from the two text filed and upon pressing the Subtract button it will display the result in the third text
+field.
+*/
+
 import java.awt.*;
 import java.awt.event.*;
 

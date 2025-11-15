@@ -1,3 +1,7 @@
+/*
+1. Write a java program to creates three push buttons showing three different colors as their label. When a button is
+clicked, that particular color is set as background color in the frame.
+*/
 
 // import java.util.*;
 import java.awt.*;
