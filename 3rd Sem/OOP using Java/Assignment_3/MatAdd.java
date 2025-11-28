@@ -34,5 +34,6 @@ class MatAdd{
             }
             System.out.println();
         }
+        sc.close();
     }
 }

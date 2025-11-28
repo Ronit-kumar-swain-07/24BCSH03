@@ -1,6 +1,6 @@
 public class Student {
     public static void main(String[] args) 
-   {
+{
         String sic = args[0];
         String name = args[1];
         String branch = args[2];

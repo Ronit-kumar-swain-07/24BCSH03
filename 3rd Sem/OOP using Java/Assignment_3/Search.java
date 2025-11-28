@@ -36,6 +36,6 @@ class Search {
         if (!found) {
             System.out.println("Element not found in array.");
         }
-
+        sc.close();
     }
 }
