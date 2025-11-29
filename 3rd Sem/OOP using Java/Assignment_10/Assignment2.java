@@ -26,7 +26,7 @@ public class Assignment2 extends Frame {
         tf2 = new TextField();
         RF = new TextField();
 
-        RF.setEditable(false); // Result field Should not be editable
+        RF.setEditable(false); // Result field Should not be Editable
         b = new Button("Subtract");
 
         // Bounds for the components
@@ -35,13 +35,13 @@ public class Assignment2 extends Frame {
         RF.setBounds(30, 150, 130, 30);
         b.setBounds(30, 200, 130, 30);
 
-        // Adding components to the frame
+        // Adding Components to the frame
         add(tf1);
         add(tf2);
         add(RF);
         add(b);
 
-        // Action listener for the button
+        // Action listener for the Button
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try {

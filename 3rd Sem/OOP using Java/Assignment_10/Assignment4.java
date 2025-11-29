@@ -30,7 +30,7 @@ public class Assignment4 extends Frame {
         RF.setEditable(false); // Result field should not be editable
         b = new Button("Factorial");
 
-        // Bounds for the components
+        // Bounds for the Components
         tf.setBounds(30, 50, 130, 30);
         RF.setBounds(30, 150, 130, 30);
         b.setBounds(30, 200, 130, 30);

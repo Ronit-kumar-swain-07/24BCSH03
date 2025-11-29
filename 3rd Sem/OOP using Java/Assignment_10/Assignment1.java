@@ -23,7 +23,7 @@ public class Assignment1 {
         Button b2 = new Button("Green");
         Button b3 = new Button("Blue");
 
-        // Position of the buttons
+        // Position of the Buttons
         b1.setBounds(50, 80, 80, 40);
         b2.setBounds(150, 80, 80, 40);
         b3.setBounds(260, 80, 80, 40);

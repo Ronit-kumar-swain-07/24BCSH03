@@ -27,11 +27,11 @@ public class Assignment3 extends Frame {
         tf1 = new TextField();
         tf2 = new TextField();
         RF = new TextField();
-        RF.setEditable(false); // Result field should not be editable
+        RF.setEditable(false); // Result field should not be Editable
         b1 = new Button("Subtract");
         b2 = new Button("Add");
 
-        //Bounds for the components
+        //Bounds for the Components
         tf1.setBounds(30, 50, 130, 30);
         tf2.setBounds(30, 100, 130, 30);
         RF.setBounds(30, 150, 130, 30);

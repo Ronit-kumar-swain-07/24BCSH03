@@ -42,7 +42,7 @@ class Triangle extends Figure {
 // Square class
 class Square extends Figure {
     Square(double side) {
-        super(side, side); // dim1 = side, dim2 also = side
+        super(side, side); // dim1 = side, dim2 also = Side
     }
 
     @Override
