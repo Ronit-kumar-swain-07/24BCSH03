@@ -1,0 +1,86 @@
+<!--
+Q4. Create a navigation menu at the top with 3 links: Basic Tags, Lists, and Formatting Tags. 
+On clicking each link, the page should scroll to therespective section (use bookmarks/anchors).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navigation Menu</title>
+    <style>
+        nav {
+
+            padding: 10px;
+        }
+
+        nav a {
+            color: black;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#basic">Basic Tags</a>
+        <a href="#lists">Lists</a>
+        <a href="#formatting">Formatting Tags</a>
+    </nav>
+
+    <section id="basic">
+        <h2><u>Basic Tags</u></h2>
+        <p>These are the Examples of html Basic Tags: <br>
+            <li>HTML : &lt;html&gt;</li>
+            <li>Body : &lt;body&gt;</li>
+            <li>Head : &lt;head&gt;</li>
+            <li>Paragraph : &lt;p&gt;</li>
+            <li>Title : &lt;title&gt;</li>
+            <li>Heading Tags : &lt;h1&gt; to &lt;h6&gt;</li>
+    </section>
+
+    <section id="lists">
+        <h2><u>Lists</u></h2>
+        <p>There are Ordered List and Unordered List in HTML.</p>
+        <p>
+        <h3>Unordered Lists</h3>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+        </ul>
+        <h3>Ordered Lists</h3>
+        <ol>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+        </ol>
+        </p>
+    </section>
+
+    <section id="formatting">
+        <h2><u>Formatting Tags</u></h2>
+        <p>There are different Formatting Tags in HTML: <br> <b>BOLD</b> <br> <i>Italic</i> <br> <u>Underline</u> <br>
+            <strong>Strong</strong> <br> <em>Emphasis</em> <br> <marquee>Marquee</marquee>
+        </p>
+    </section>
+
+</body>
+
+</html>
