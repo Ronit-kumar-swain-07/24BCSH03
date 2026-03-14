@@ -1,0 +1,22 @@
+<!-- 4.	Create a simple counter with an input box and two buttons: + and - . 
++ increases the value by 1,  - decreases the value by 1 (not below 0). -->
+
+<html>
+    <head>
+        <title>Question 4</title>
+        <script>
+            function cnt(val) {
+                let input = document.getElementById('inp');
+                let curr = parseInt(input.value);
+                if (curr + val >= 0) {
+                    input.value = curr + val;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="inp" value="0" readonly>
+        <button onclick="cnt(1)">+1</button>
+        <button onclick="cnt(-1)">-1</button>
+    </body>
+</html>
