@@ -1,0 +1,19 @@
+
+<!-- 1.	Create a heading (<h2>) with the text Hello World. Using JavaScript, change the text to
+Welcome to DOM Manipulation when a button is clicked. -->
+
+<html>
+    <head>
+    <title>Question 1</title>
+    <script>
+        function chngtxt() {
+            document.getElementById('heading').innerText = "Welcome to DOM Manipulation";
+        }
+    </script>
+    </head>
+
+    <body>
+        <h2 id="heading">Hello World</h2>
+        <button onclick="chngtxt()">Change Text</button>
+    </body>
+</html>
