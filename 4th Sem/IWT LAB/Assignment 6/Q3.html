@@ -1,0 +1,21 @@
+<!-- 3.	Create three buttons: Red, Green, Blue. When a button is clicked, change the background color of a <div> accordingly. 
+Before changing the color, ask confirmation from the user if they really want to change the background color. -->
+
+<html>
+    <head>
+        <title>Question 3</title>
+        <script>
+            function chng(color) {
+                if(confirm("Do you want to Change Colour ?")) {
+                document.getElementById('box').style.backgroundColor = color;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="box" style="width: 600px; height: 300px; border: 2px solid black;" ></div>
+        <button onclick="chng('red')">Red</button>
+        <button onclick="chng('green')">Green</button>
+        <button onclick="chng('blue')">Blue</button>
+    </body>
+    </html>
