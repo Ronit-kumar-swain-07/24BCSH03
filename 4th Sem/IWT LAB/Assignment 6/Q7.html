@@ -1,0 +1,141 @@
+<!-- 7.	Create a registration form with fields for  Name, Gender (radio button), Mobile, Address (textarea), Country (dropdown), Email, and Password. 
+Use external JS to apply form validation to check:
+
+a.	None of the fields should be empty.
+b.	Mobile number should be a 10-digit valid mobile number.
+c.	Email should have a valid format.
+d.	Length of the password must be between 6-15. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <script>
+
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let address = document.getElementById("address").value;
+            let country = document.getElementById("country").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+
+            let mobilePattern = /^[0-9]{10}$/;
+            let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (name == "" || mobile == "" || address == "" || country == "" || email == "" || password == "") {
+                alert("All fields must be filled");
+                return false;
+            }
+
+            if (!gender) {
+                alert("Please select gender");
+                return false;
+            }
+
+            if (!mobile.match(mobilePattern)) {
+                alert("Mobile number must be 10 digits");
+                return false;
+            }
+
+            if (!email.match(emailPattern)) {
+                alert("Enter a valid email");
+                return false;
+            }
+
+            if (password.length < 6 || password.length > 15) {
+                alert("Password must be between 6 and 15 characters");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+
+        .gender {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validateForm()">
+            <label>Name</label>
+            <input type="text" id="name">
+            <label>Gender</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+            <br><br>
+            <label>Mobile</label>
+            <input type="text" id="mobile">
+            <label>Address</label>
+            <textarea id="address"></textarea>
+            <label>Country</label>
+            <select id="country">
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Australia</option>
+                <option>UAE</option>
+                <option>Canada</option>
+                <option>South Africa</option>
+            </select>
+            <label>Email</label>
+            <input type="text" id="email">
+            <label>Password</label>
+            <input type="password" id="password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
