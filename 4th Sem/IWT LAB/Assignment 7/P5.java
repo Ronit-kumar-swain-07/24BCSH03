@@ -1,3 +1,5 @@
+//5.  Write a JDBC program to display all records from the student table.
+
 package jpack;
 import java.sql.*;
 public class P5 {
