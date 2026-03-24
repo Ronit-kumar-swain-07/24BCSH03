@@ -1,3 +1,8 @@
+/*
+6.	Write a JDBC program to update the CGPA of a student based on their roll_no. 
+Take the targeted student’s roll number and updated cgpa as input from the keyboard.
+*/
+
 package jpack;
 import java.sql.*;
 import java.util.Scanner;
